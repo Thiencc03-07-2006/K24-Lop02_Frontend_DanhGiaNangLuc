@@ -5,7 +5,7 @@
 - **Lớp:** K24-HN-CNTT2
 - **Link repository:** 
 - **Hệ điều hành (Windows/macOS):** Windows
-- **Mã commit P2 đã nộp trước phút 90 (gõ `git log --oneline -1`):**
+- **Mã commit P2 đã nộp trước phút 90 (gõ `git log --oneline -1`):*6c4eaac0f17c6797c4cf9e6ab88a9322774d6961*
 - **Phiên bản Node.js (gõ `node -v`):** v22.18.0
 
 ## 4.1. Giao diện danh sách sản phẩm
