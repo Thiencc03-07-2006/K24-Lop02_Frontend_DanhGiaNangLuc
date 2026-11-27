@@ -1,0 +1,68 @@
+/* HOAN_THIEN: viết CSS cho bài làm tại đây (hoặc tách thành nhiều tệp CSS nhỏ). */
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  color: #1f2937;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  list-style: none;
+}
+
+.app-header {
+  background-color: red;
+  color: #fff;
+  padding: 14px 24px;
+}
+
+.app-header-title {
+  font-weight: 700;
+}
+
+.main-container {
+  margin: 0 auto;
+  padding: 28px 24px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.table-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-card .table thead th {
+  background-color: #f9fafb;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-card .table tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+.table-card .table tbody tr:last-child td {
+  border-bottom: none;
+}
