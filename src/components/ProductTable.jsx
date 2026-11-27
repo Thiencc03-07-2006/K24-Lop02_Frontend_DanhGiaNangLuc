@@ -1,10 +1,16 @@
 import ProductRow from "./ProductRow.jsx";
 
-export default function ProductTable({ products = [] }) {
+/** Hiển thị bảng sản phẩm gồm 7 cột và dùng ProductRow cho từng dòng. */
+export default function ProductTable({
+  products = [],
+  categoryMap,
+  onEdit,
+  onDelete,
+}) {
   return (
     <div className="table-card">
       <div className="table-responsive">
-        <table className="table align-middle mb-0">
+        <table className="table align-middle mb-0" data-testid="product-table">
           <thead>
             <tr>
               <th scope="col">Tên</th>
@@ -18,7 +24,13 @@ export default function ProductTable({ products = [] }) {
           </thead>
           <tbody>
             {products.map((product) => (
-              <ProductRow key={product.id} product={product} />
+              <ProductRow
+                key={product.id}
+                product={product}
+                categoryMap={categoryMap}
+                onEdit={onEdit}
+                onDelete={onDelete}
+              />
             ))}
           </tbody>
         </table>
@@ -26,4 +38,3 @@ export default function ProductTable({ products = [] }) {
     </div>
   );
 }
-
